@@ -1,8 +1,11 @@
 import React from 'react'
+import "../assets/css/Button.css"
 
-const Button = () => {
+const Button = (props) => {
     return (
-        <button type='button' className='bg-gray-300 text-black p-1' >Click</button>
+        <button type='button' className={`btn btn-${props.variant}`}>
+            {props.text}
+        </button>
     )
 }
 

@@ -1,0 +1,22 @@
+.btn {
+    padding: 4px 14px 4px 14px;
+    border-radius: 6px;
+    border: none;
+    color: #ffff;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-success {
+    background: #57ae4f;
+}
+
+.btn-warning {
+    background: #fb2d68;
+}
+
+.btn-primary {
+    background: #4fae9e;
+}

@@ -6,8 +6,8 @@ const TodoItem = () => {
         <div className='flex justify-between items-center text-white bg-mainBlue p-3 mb-2'>
             TodoItem
             <div className='flex items-center gap-3'>
-                <Button/>
-                <Button/>
+                <Button text="Edit" variant="success" />
+                <Button text="Delete" variant="warning"/>
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ class FormInput extends React.Component {
         return ( 
             <form style={inputForm}>
                 <input style={input} type="text" placeholder="add task"/>
-                <Button/>
+                <Button text="Add" variant="primary" />
             </form>
          );
     }

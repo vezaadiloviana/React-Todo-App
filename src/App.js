@@ -24,6 +24,17 @@ class App extends React.Component {
     })
   }
 
+  addTask = data => {
+    const id = this.state.todos.length
+    const newData = {
+      id: id + 1,
+      title: data
+    }
+    this.setState({
+      todos: [...this.state.todos, newData]
+    })
+  } 
+
   render() {
     const { todos } = this.state;
     return (
@@ -38,7 +49,7 @@ class App extends React.Component {
           )}
         </div>
         <div>
-          <FormInput />
+          <FormInput add={this.addTask}/>
         </div>
       </div>
     );
